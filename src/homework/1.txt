@@ -1,0 +1,18 @@
+1.什么是消息中间件MOM？英文回答
+Message-oriented middleware (MOM) is software or hardware infrastructure supporting sending and receiving messages between distributed systems.
+
+2.描述MOM的主要应用场景。
+维护消息队列、维护程序和队列之间的关系、处理网络的重新启动和在网络中移动消息等是MOM的任务。
+
+3.认真阅读《分布式消息中间件实践.pdf》第一章消息队列1.4，请设计一个自己的消息队列系统。
+   要求：1.请写出三种Java创建线程的方式。
+           1、继承 Thread 类
+           直接继承 Thread 即可实现多线程。
+           Thread 本质上也是实现了 Runnable 接口，线程启动的唯一方法是通过 Thread 类的 start() 实例方法实现的。
+           start() 方法调用时，系统才会真正创建一个新线程，并执行 run() 方法，它是一个native方法。
+           2、实现 Runnable 接口
+           3. 实现 Callable 接口
+         2.简单说明消息服务中Broker的作用。
+            消息处理中心，负责消息的接收、存储、转发
+         3.针对《分布式消息中间件实践.pdf》中消息队列示例，你认为那些方面还可以改进？
+         4.参考消息队列示例，设计并实现MyFirstMQ。
